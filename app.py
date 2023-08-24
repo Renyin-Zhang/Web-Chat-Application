@@ -6,8 +6,6 @@ from chatbot.chatGpt import chatgpt_blueprint
 from models.session import Session
 from models.user import User
 from webPage.archives import archives_blueprint
-from eliza.eliza import eliza_blueprint
-from games.games import games_blueprint
 from flask_cors import CORS
 from models.database import init_database
 from history.history import history_blueprint
@@ -26,8 +24,6 @@ CORS(app, resources={r'/*': {'origins': '*'}}, supports_credentials=True)
 app.register_blueprint(auth_blueprint)
 app.register_blueprint(chatgpt_blueprint)
 app.register_blueprint(archives_blueprint)
-app.register_blueprint(eliza_blueprint)
-app.register_blueprint(games_blueprint)
 app.register_blueprint(history_blueprint)
 
 
