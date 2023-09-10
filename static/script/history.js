@@ -7,12 +7,6 @@ const histories = [
         pathname: "/chatgpt"
     },
     {
-        title: "Eliza",
-        description: "Have a chat with eliza",
-        icon: "🤖",
-        pathname: "/chat"
-    },
-    {
         title: "Wordle",
         description: "Play a wordle game",
         icon: "🎮",
